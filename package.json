@@ -5,8 +5,8 @@
   "main": "train.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node train.js",
-    "dev":"nodemon train.js"
+    "start": "node train.js",
+    "dev": "nodemon train.js"
   },
   "keywords": [],
   "author": "",
