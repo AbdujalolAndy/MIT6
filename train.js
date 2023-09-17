@@ -1,11 +1,17 @@
-// B-Task: Shunday function tuzing, u 1ta parametr ega bolsin,
-//hamda osha stringda qatnashgan raqamlarni sonini return qilsin.
-//Masalan: getDigits("ag1aw5g6") return qilsin 3
+// C-Task: 
 
-function getDigits(text='ag1aw5g6'){
-    return text.split('')
-        .filter((a)=>{if(parseInt(a)/1) return a})
-        .length;
+// Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin.
+
+// MASALAN checkSimilarity("laep", "apple") true return qiladi.
+
+function checkSimilarity(text,word){
+    let index=0;
+    while(index<word.length){
+        if(!word.includes(text[index]))return false
+        index++;
+    }
+    return true;
 }
 
-console.log(getDigits());
+const result=checkSimilarity("alepp", "apple");
+console.log("Can the text be similar to word:", result);

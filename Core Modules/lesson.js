@@ -12,7 +12,3 @@ fs.writeFileSync('./input.txt',`${file} \n\t\t BekzodAli`);
 const new_file=fs.readFileSync('./input.txt',"utf8");
 console.log('File',new_file);
 console.log('************************');
-
-//Module Package Extrnal
-
-//Module Package Files

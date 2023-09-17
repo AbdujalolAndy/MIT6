@@ -5,13 +5,25 @@
   "main": "train.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node train.js",
-    "dev": "nodemon train.js"
+    "train": "nodemon train.js",
+    "lesson1": "nodemon \"Core Modules\"/lesson.js",
+    "lesson2": "nodemon ./\"External Module\"/lesson2.js",
+    "lesson3":"nodemon ./\"File Module\"/lesson3.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "inquirer": "^6.0.0",
+    "js-promisify": "^1.3.1",
+    "moment": "^2.29.4",
+    "readline": "^1.3.0",
+    "util": "^0.12.5",
+    "uuid": "^9.0.1",
+    "validator": "^13.11.0"
   }
 }
