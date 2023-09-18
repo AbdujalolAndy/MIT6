@@ -17,26 +17,26 @@ inquirer
 console.log("*****************");
 
 //3 Validator 
-console.log("*****************")
+console.log("*****************");
 
 const validator = require('validator');
 let test = validator.isEmail('abdu@jalol.com');
 console.log('Test:', test);
 
-console.log("*****************")
+console.log("*****************");
 test = validator.isInt("100");
 console.log('Test:', test);
 
-console.log("*****************")
+console.log("*****************");
 test= validator.isIP("118.235.3.168");
 console.log("Test:", test);
-console.log("*****************")
+console.log("*****************");
 
 //uuid
 const {v4:uuidv4} = require('uuid');
 const randomStr = uuidv4();
-console.log(`uuid creates Random String ${randomStr}`)
-console.log("*****************")
+console.log(`uuid creates Random String ${randomStr}`);
+console.log("*****************");
 
 //chalk
 const chalk = require('chalk');
