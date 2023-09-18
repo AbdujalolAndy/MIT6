@@ -14,4 +14,4 @@ function checkSimilarity(text,word){
 }
 
 const result=checkSimilarity("alepp", "apple");
-console.log("Can the text be similar to word:", result);
+console.log("Can the text be formed to word:", result);
