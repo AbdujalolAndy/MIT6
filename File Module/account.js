@@ -19,15 +19,15 @@ class Account{
     withdrawMoney(money){
         if(this.#amount>=money){
             this.#amount-=money;
-            console.log(`Hisobingizda $${money} yechild va qoldi ${this.#amount}`)
+            console.log(`Hisobingizda $${money} yechild va qoldi ${this.#amount}`);
         }else{
-            console.log('Hisobingizda yetarli mablag\' yo\'q')
+            console.log('Hisobingizda yetarli mablag\' yo\'q');
         }
     }
 
     makeDeposit(money){
         this.#amount+=money;
-        console.log(`Hisobingiz to'ldirildi! Hisobingiz $${this.#amount} tashkil etadi`)
+        console.log(`Hisobingiz to'ldirildi! Hisobingiz $${this.#amount} tashkil etadi`);
     }
 
     giveMeDetails(){
@@ -40,12 +40,12 @@ class Account{
     }
 
     static tellMeAboutClass(){
-        console.log("Bu class accountlarni yasash uchun xizmat qiladi")
+        console.log("Bu class accountlarni yasash uchun xizmat qiladi");
     }
 
     static tellMeTime(){
-        console.log(`Hozirgi vaqt ${moment().format("YYYY MM DD HH:mm")} `)
+        console.log(`Hozirgi vaqt ${moment().format("YYYY MM DD HH:mm")} `);
     }
 }
 
-module.exports=Account
+module.exports=Account;
