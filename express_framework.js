@@ -15,17 +15,17 @@ app.set("views", "views");
 app.set('view engine', 'ejs');
 
 //4 Routing code
-app.get('/hello', (req,res)=>{
+app.get('/hello', (req,res) => {
     res.end(`<h1>Hello World by Abdujalol</h1>`);
 });
 
-app.get('/gif', (req,res)=>{
+app.get('/gif', (req,res) => {
     res.end("<h1>Siz sovg\'alar bo\'limidasz</h1>");
 })
 
 const server  = http.createServer(app);
 let PORT = 3000;
-server.listen(PORT, ()=>{
-    console.log(`The server is running successfully on port ${PORT}`)
+server.listen(PORT, () => {
+    console.log(`The server is running successfully on port ${PORT}`);
 });
 
